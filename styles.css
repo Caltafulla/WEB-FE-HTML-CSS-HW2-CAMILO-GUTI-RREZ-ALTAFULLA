@@ -82,10 +82,41 @@ header nav {
 
 .aside {
   grid-area: aside;
-  padding: 20px;
-  border: 1px solid #333;
+  padding: 0px;
+  background-color: rgb(252, 247, 242);
+  border-right: 1px solid #333;
+  box-sizing: border-box;
 }
 
+.aside h4 {
+  margin: 15px 15px 15px 15px;
+}
+
+.filter-buttons {
+  margin: 20px 0px 0px 0px;
+  padding: 0;
+  border: 0;
+  width: 100%;
+}
+
+.filter-buttons button {
+  text-align: center;
+  background-color: rgb(252, 247, 242);
+  margin: 5px 0px 5px 0px;
+  height: 40px;
+  width: 100%;
+  border: none;
+}
+
+button b,
+button i {
+  font-size: 16px;
+  padding: 0px 10px 0px 0px;
+}
+
+button b:hover {
+  box-shadow: 1px 1px 10px rgba(185, 185, 185, 0.5);
+}
 .section-1,
 .section-2,
 .section-3,
