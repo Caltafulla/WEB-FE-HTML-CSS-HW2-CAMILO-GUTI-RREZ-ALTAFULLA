@@ -129,10 +129,18 @@ button b:hover {
 
 .section-1 {
   grid-area: section-1;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/Section_1_gif.gif);
+  transition: background-image 0.5s ease, transform 0.5s ease;
 }
 
-.section-gif {
-  margin: 0;
+.section-1:hover {
+  background-image: url(img/Hover-Section1.png);
+}
+
+.section-1 a {
   width: 100%;
   height: 100%;
 }
