@@ -133,6 +133,9 @@ button b:hover {
   width: 100%;
   height: 100%;
   background-image: url(img/Section_1_gif.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
   transition: background-image 0.5s ease, transform 0.5s ease;
 }
 
@@ -147,6 +150,23 @@ button b:hover {
 
 .section-2 {
   grid-area: section-2;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/Section2-back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.5s ease, transform 0.5s ease;
+}
+
+.section-2:hover {
+  background-image: url(img/MoritaGod.png);
+}
+
+.section-2 a {
+  width: 100%;
+  height: 100%;
 }
 
 .section-3 {
