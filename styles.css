@@ -171,6 +171,23 @@ button b:hover {
 
 .section-3 {
   grid-area: section-3;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(img/Section3-jogg.gif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 0.5s ease, transform 0.5s ease;
+}
+
+.section-3:hover {
+  background-image: url(img/Section3-jogghover.png);
+}
+
+.section-3 a {
+  width: 100%;
+  height: 100%;
 }
 
 .section-g {
