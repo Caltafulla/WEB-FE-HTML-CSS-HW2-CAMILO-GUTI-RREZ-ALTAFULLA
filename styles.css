@@ -1,229 +1,269 @@
-* {
-  font-family: monospace;
-}
+  * {
+    font-family: monospace;
+  }
 
-body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
+  body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
 
-.header {
-  display: flex;
-  align-items: center;
-  background-color: #474747;
-  text-align: center;
-  width: 100%;
-}
+  .header {
+    display: flex;
+    align-items: center;
+    background-color: #474747;
+    text-align: center;
+    width: 100%;
+  }
 
-header nav {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-}
+  header nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
 
-.header a {
-  color: #f4f4f4;
-  font-size: 16px;
-  padding: 0 15px;
-  text-decoration: none;
-}
+  .header a {
+    color: #f4f4f4;
+    font-size: 16px;
+    padding: 0 15px;
+    text-decoration: none;
+  }
 
-.header a :hover {
-  text-shadow: 1px 1px 4px rgba(185, 185, 185, 0.5);
-}
+  .header a :hover {
+    text-shadow: 1px 1px 4px rgba(185, 185, 185, 0.5);
+  }
 
-.logo-container,
-.nav-buttons {
-  padding-left: 20px;
-  margin: 10px 0px 10px 0px;
-  flex-shrink: 0;
-}
+  .logo-container,
+  .nav-buttons {
+    padding-left: 20px;
+    margin: 10px 0px 10px 0px;
+    flex-shrink: 0;
+  }
 
-.logo-container {
-  padding-left: 20px;
-}
+  .logo-container {
+    padding-left: 20px;
+  }
 
-.logo-container #logo {
-  height: 40px;
-  width: 40px;
-  display: block;
-}
+  .logo-container #logo {
+    height: 40px;
+    width: 40px;
+    display: block;
+  }
 
-.nav-buttons {
-  padding-right: 20px;
-}
+  .nav-buttons {
+    padding-right: 20px;
+  }
 
-.nav-buttons a {
-  padding: 0 10px;
-}
+  .nav-buttons a {
+    padding: 0 10px;
+  }
 
-.nav-buttons #LupaImg,
-.nav-buttons #ShCImg {
-  height: 20px;
-  width: 20px;
-  display: inline-block;
-}
+  .nav-buttons #LupaImg,
+  .nav-buttons #ShCImg {
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+  }
 
-.main-layout {
-  display: grid;
-  grid-template-areas:
-    "header header header"
-    "aside section-1 section-1"
-    "aside section-2 section-3"
-    "aside section-2 section-g"
-    "footer footer footer";
-  grid-template-columns: 130px 1fr 1fr;
-  grid-template-rows: auto 150px 1fr 1fr auto;
-  flex: 1;
-}
+  .main-layout {
+    display: grid;
+    grid-template-areas:
+      "header header header"
+      "aside section-1 section-1"
+      "aside section-2 section-3"
+      "aside section-2 section-g"
+      "footer footer footer";
+    grid-template-columns: 130px 1fr 1fr;
+    grid-template-rows: auto 150px 1fr 1fr auto;
+    flex: 1;
+  }
 
-.aside {
-  grid-area: aside;
-  padding: 0px;
-  background-color: #f4f4f4;
-  border-right: 1px solid #333;
-  box-sizing: border-box;
-}
+  .aside {
+    grid-area: aside;
+    padding: 0px;
+    background-color: #f4f4f4;
+    border-right: 1px solid #333;
+    box-sizing: border-box;
+  }
 
-.aside h4 {
-  margin: 15px 15px 15px 15px;
-}
+  .aside h4 {
+    margin: 15px 15px 15px 15px;
+  }
 
-.filter-buttons {
-  margin: 20px 0px 0px 0px;
-  padding: 0;
-  border: 0;
-  width: 100%;
-}
+  .filter-buttons {
+    margin: 20px 0px 0px 0px;
+    padding: 0;
+    border: 0;
+    width: 100%;
+  }
 
-.filter-buttons button {
-  text-align: center;
-  background-color: #f4f4f4;
-  margin: 5px 0px 5px 0px;
-  height: 40px;
-  width: 100%;
-  border: none;
-}
+  .filter-buttons button {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin: 5px 0px 5px 0px;
+    height: 40px;
+    width: 100%;
+    border: none;
+  }
 
-button b,
-button i {
-  font-size: 16px;
-  padding: 0px 10px 0px 0px;
-}
+  button b,
+  button i {
+    font-size: 16px;
+    padding: 0px 10px 0px 0px;
+  }
 
-button b:hover {
-  box-shadow: 1px 1px 10px rgba(185, 185, 185, 0.5);
-}
-.section-1,
-.section-2,
-.section-3,
-.section-4,
-.section-5 {
-  display: flex;
-  margin: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  background-size: cover;
+  button b:hover {
+    box-shadow: 1px 1px 10px rgba(185, 185, 185, 0.5);
+  }
+
+  .section-1,
+  .section-2,
+  .section-3,
+  .section-4,
+  .section-5 {
+    display: flex;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 0.5s ease, transform 0.5s ease;
+  }
+
+  .section-1 {
+    grid-area: section-1;
+    background-image: url(img/Section_1_gif.gif);
+  }
+
+  .section-1:hover {
+    background-image: url(img/Hover-Section1.png);
+  }
+
+  .section-1 a,
+  .section-2 a,
+  .section-3 a,
+  .section-4 a,
+  .section-5 a {
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-2 {
+    grid-area: section-2;
+    background-image: url(img/Section2-back.png);
+  }
+
+  .section-2:hover {
+    background-image: url(img/MoritaGod.png);
+  }
+
+  .section-3 {
+    grid-area: section-3;
+    background-image: url(img/Section3-jogg.gif);
+  }
+
+  .section-3:hover {
+    background-image: url(img/Section3-jogghover.png);
+  }
+
+  .section-g {
+    grid-area: section-g;
+    display: flex;
+  }
+
+  .section-4,
+  .section-5 {
+    flex: 1;
+  }
+
+  .section-4 {
+    grid-area: section-4;
+    background-image: url(img/section3-glasses.png);
+  }
+
+  .section-4:hover {
+    background-image: url(img/section3-hover.png);
+  }
+
+  .section-5 {
+    grid-area: section-4;
+    background-image: url(img/Section4-socks.png);
+  }
+
+  .section-5:hover {
+    background-image: url(img/section4-hover.png);
+  }
+
+  .footer {
+    grid-area: footer;
+    align-items: center;
+    background-color: #474747;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socialnet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0px 0px 0px;
+  }
+
+
+  .socialnet figure {
+    margin: 0 10px;
+    width: 20px;
+    height: 20px;
+  }
+
+  .socialnet img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .footer h5 {
+    padding: 10px 0;
+    color: #f4f4f4;
+    margin: 0;
+  }
+
+  /* CONTACT STYLE */
+
+.contact-body{
+  background-image: url(img/contact-back.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   background-position: center;
-  transition: background-image 0.5s ease, transform 0.5s ease;
 }
 
-.section-1 {
-  grid-area: section-1;
-  background-image: url(img/Section_1_gif.gif);
-}
-
-.section-1:hover {
-  background-image: url(img/Hover-Section1.png);
-}
-
-.section-1 a,
-.section-2 a,
-.section-3 a,
-.section-4 a,
-.section-5 a {
-  width: 100%;
-  height: 100%;
-}
-
-.section-2 {
-  grid-area: section-2;
-  background-image: url(img/Section2-back.png);
-}
-
-.section-2:hover {
-  background-image: url(img/MoritaGod.png);
-}
-
-.section-3 {
-  grid-area: section-3;
-  background-image: url(img/Section3-jogg.gif);
-}
-
-.section-3:hover {
-  background-image: url(img/Section3-jogghover.png);
-}
-
-.section-g {
-  grid-area: section-g;
-  display: flex;
-}
-
-.section-4,
-.section-5 {
-  flex: 1;
-}
-
-.section-4 {
-  grid-area: section-4;
-  background-image: url(img/section3-glasses.png);
-}
-
-.section-4:hover {
-  background-image: url(img/section3-hover.png);
-}
-
-.section-5 {
-  grid-area: section-4;
-  background-image: url(img/Section4-socks.png);
-}
-
-.section-5:hover {
-  background-image: url(img/section4-hover.png);
-}
-
-.footer {
-  grid-area: footer;
+.main {
   align-items: center;
-  background-color: #474747;
-  text-align: center;
-  width: 100%;
-  display: block;
-}
-
-.socialnet {
-  display: flex;
   justify-content: center;
-  align-items: center;
+  text-align: center;
 }
 
-.socialnet figure {
-  margin: 0;
-  width: 1.7%;
-  height: 1.7%;
+.main h1 {
+  color: #ffffff;
 }
 
-.socialnet img {
-  padding: 0px 10px 0px 10px;
+.main section{
+  border: 1px solid #333;
+}
+
+
+
+.opacity-courtain{
+  position: absolute;
+  background-color: black;
   width: 100%;
   height: 100%;
+  opacity: 10%;
 }
 
-.footer h5 {
-  margin: 0;
-}
