@@ -1,5 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat');
   * {
-    font-family: monospace;
+    font-family: "Montserrat";
   }
 
   body {
@@ -87,7 +88,7 @@
     box-sizing: border-box;
   }
 
-  .aside h4 {
+  .aside h5 {
     margin: 15px 15px 15px 15px;
   }
 
@@ -244,20 +245,42 @@
 }
 
 .main {
+  display: flex;
   align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   text-align: center;
+  height: 100%;
+  width: 100%;
 }
 
 .main h1 {
   color: #ffffff;
+  padding: 20px 0;
+  margin: 0;
 }
 
-.main section{
-  border: 1px solid #333;
+.form-container {
+  display: flex; 
+  width: 100%;
+  justify-content: center;
 }
 
+.spam-place, .info-spot{
+  border: 1px solid #f8e2c1;
+  border-radius: 20px;
+  backdrop-filter: blur(5px);
+  height: 80vh;
+  margin: 0 20px;
+}
 
+.spam-place{
+  width: 50%;
+}
+
+.info-spot{
+  width: 40%;
+}
 
 .opacity-courtain{
   position: absolute;
