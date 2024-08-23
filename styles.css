@@ -305,8 +305,42 @@ button b:hover {
 
 .info-spot {
   width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
+.info-spot form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-g {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.form-g label {
+  text-align: left;
+  color: #f4f4f4;
+  margin-bottom: 5px;
+}
+
+.form-g input {
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+.info-spot button {
+  margin-top: 10px;
+}
 .opacity-courtain {
   position: absolute;
   background-color: black;
@@ -314,4 +348,10 @@ button b:hover {
   height: 100%;
   opacity: 50%;
   z-index: 1;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
