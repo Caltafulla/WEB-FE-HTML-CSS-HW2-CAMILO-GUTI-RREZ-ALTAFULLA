@@ -23,7 +23,7 @@
                 </p>
             </section>
             <section class="info-spot">
-                <form action="/submit">
+                <form action="/submit" class="fm">
                     <section class="form-g">
                         <label for="name">Nombre y Apellido:</label>
                         <input type="text" id="name" name="name">
@@ -36,11 +36,15 @@
                         <label for="tel">Teléfono:</label>
                         <input type="number" id="tel" name="tel" min="0" max="9999999999">
                     </section>
-                    <section class="form-g">
+                    <section class="form-gtext">
                         <label for="Reqs">Explicanos tu requerimiento:</label>
                         <input type="text" name="texto" id="texto">
                     </section>
-                    <button type="submit">Enviar</button>
+                    <section class="form-g">
+                        <a href="index.html">
+                            <button type="button">Enviar</button>
+                        </a>
+                    </section>
                 </form>
             </section>
 

@@ -308,7 +308,6 @@ button b:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
 }
 
 .info-spot form {
@@ -316,31 +315,66 @@ button b:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .form-g {
   margin-bottom: 15px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  align-items: left;
+  width: 60%;
 }
 
-.form-g label {
+.form-gtext {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  width: 60%;
+  height: 30%;
+}
+
+.fm {
+  width: 60%;
+  height: 100%;
+}
+
+.form-g label,
+.form-gtext label {
   text-align: left;
   color: #f4f4f4;
   margin-bottom: 5px;
 }
 
-.form-g input {
+#name {
+  width: 70%;
+}
+
+#email {
+  width: 50%;
+}
+
+#tel {
+  width: 30%;
+}
+
+#texto {
   width: 100%;
-  max-width: 400px;
-  box-sizing: border-box;
+  height: 70%;
+}
+
+.info-spot a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  align-items: left;
 }
 
 .info-spot button {
-  margin-top: 10px;
+  margin-top: 2px;
+  width: 30%;
 }
+
 .opacity-courtain {
   position: absolute;
   background-color: black;
